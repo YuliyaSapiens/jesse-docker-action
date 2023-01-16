@@ -3,9 +3,8 @@ name: hello_me
 on: [create, workflow_dispatch, push]
 
 jobs:
- 
+  myj:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: hello
         uses: action@main
